@@ -51,13 +51,13 @@ Baixar o instalador
 
 Executar o instalador
 
-<p align="center">
-    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/execucao_instalador.png">
-</p>
-
 ### 3° passo
 
 Aceitar o termos e clicar em "Next"
+
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/execucao_instalador.png">
+</p>
 
 ### 4° passo
 
