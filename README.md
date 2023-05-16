@@ -37,7 +37,7 @@ O instalador pode ser baixado do seguinte link: [LuaForWindows](https://github.c
 
 Página GitHub
 <p align="center">
-    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/pagina_luaforwindiws.png">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/pagina_luaforwindows.png">
 </p>
 
 ### 1° passo
