@@ -145,7 +145,7 @@ Em seguida instale a seguinte ferramenta através do comando:
 
 E por fim para compilar e instalar a versão execute o seguinte script:
 
-    - mkdir lua_build
+    mkdir lua_build
  
     cd lua_build
  
