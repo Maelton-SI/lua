@@ -132,6 +132,33 @@ e ao criar um novo arquivo salve-o com a extensão .lua
     <img src="https://github.com/Maelton-SI/lua/blob/main/Images/extensaoLua_VScode.png">
 </p>
 
+## Linux
+
+Abra o terminal e utilizando o gerenciador apt do linux, primeiro 
+baixamos os arquivos através do comando
+	
+    - sudo apt install lua5.1
+
+Em seguida instale a seguinte ferramenta através do comando:
+
+    - sudo apt install build-essential libreadline-dev
+
+E por fim para compilar e instalar a versão execute o seguinte script:
+
+    - mkdir lua_build
+ 
+    cd lua_build
+ 
+    curl -R -O http://www.lua.org/ftp/lua-5.1.5.tar.gz
+ 
+    tar -zxf lua-5.1.5.tar.gz
+ 
+    cd lua-5.1.5
+ 
+    make linux test
+ 
+    sudo make install
+
 # Sintaxe
 
 
