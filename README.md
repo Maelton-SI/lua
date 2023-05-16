@@ -30,6 +30,108 @@ A motivação para criar uma nova linguagem de programação veio da necessidade
 
 ## Windows
 
+Para Windows existe o "luaforwindows" que disponibiliza bibliotecas tanto padrão como outras, um
+editor de texto, e também os binários para utilização dos comandos da linguagem.
 
+O instalador pode ser baixado do seguinte link: [LuaForWindows](https://github.com/rjpcomputing/luaforwindows/releases)
+
+Página GitHub
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/pagina_luaforwindiws.png">
+</p>
+
+### 1° passo
+
+Baixar o instalador
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/instalador_lua.png">
+</p>
+
+### 2° passo
+
+Executar o instalador
+
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/execucao_instalador.png">
+</p>
+
+### 3° passo
+
+Aceitar o termos e clicar em "Next"
+
+### 4° passo
+
+Escolher o local de instalação
+
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/local_de_instalacao.png">
+</p>
+
+obs: caso queira mudar o local de instalação basta clicar em "Browser", o explorador de 
+arquivo será aberto e você pode escolher o caminho que achar mais adequado
+
+Por fim clique em "Next"
+
+### 5° passo
+
+Logo em seguida você pode escolher o que você quer na instalação
+
+Desses você pode optar por instalar ou não o editor sciTE pois iremos utilizar o VScode
+
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/instalacao_dos_pacotes.png">
+</p>
+
+Com exceção do editor que ele sugere, fica a seu critério, deixe marcado todas as outras opções
+
+Prossiga com o "Next"
+
+### 6° passo
+
+Seleção da pasta
+
+Não precisa mexer nessa pasta, prossiga com "Next"
+
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/selecao_da_pasta.png">
+</p>
+
+### 7° passo
+
+Você pode criar um atalho para o terminal lua na área de trabalho basta deixar a opção
+"Create a desktop shortcut" marcada
+
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/criacao_de_atalho.png">
+</p>
+
+Obs: Você também pode adicionar o tema dark no editor sciTE caso tenha optado por ele, 
+para isso basta deixa a opção "addicional schemes" marcada
+
+Por fim clique em "Next"
+
+### 8° passo
+
+Verifique as opções que serão instaladas e estando tudo ok clique em "install"
+
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/instalacao.png">
+</p>
+
+### 9° passo
+
+Após a instalação de todos os pacotes um tela de finalização parecerá, apenas clique em 
+"Finish"
+
+### 10° passo: VScode
+
+Para utilizar Lua no terminal do Visual studio basta instalar a extensão "Lua"
+e ao criar um novo arquivo salve-o com a extensão .lua
+
+<p align="center">
+    <img src="https://github.com/Maelton-SI/lua/blob/main/Images/extensaoLua_VScode.png">
+</p>
+
+# Sintaxe
 
 
