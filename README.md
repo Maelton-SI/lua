@@ -225,6 +225,113 @@ Perceba que dependendo do bloco o x assume um valor diferente, e ao sair de cada
 um dos blocos as declarações Local mais internas vão perdendo seus valores assumindo
 assim um número mais externo 
 
+## Estrutura condicional (IF)
+
+A estrutura básica para o if é a seguinte:
+
+    if "expressao" then
+        bloco de código
+    elseif "expressao" then
+        bloco de código
+    else
+        bloco de código
+    end
+
+O comportamento do if funcionada da seguinte maneira: caso o valor da expressão seja
+verdadeiro ele permite a entrada no bloco, caso não vai até a próxima estrutura, ignorando
+o bloco daquela expressão
+
+### Operadores
+
+Você pode utilizar os seguinte operadores nas expressões da Linguagem Lua:
+
+#### Operadores Relacionais
+
+    Menor que: "<"
+    Maior que: ">"
+    Maior ou igual: "=>"
+    Menor ou igual: "=<"
+    Igualdade: "=="
+    Diferente: "~="
+
+#### Operadores Lógicos
+
+    AND: equivale ao "&&" em C;
+    OR: equivale ao "||" em C;
+    NOT: Inverte o valor.
+
+#### Operadores Aritméticos
+
+    Adição: "+"
+    Subtração: "-"
+    Multiplicação: "*"
+    Divisão: "/"
+    Resto da divisão: "%"
+    Exponenciação: "^"
+
+## Estruturas de Repetição (WHILE, FOR E REPEAT)
+
+### While
+
+Sintaxe básica:
+
+    while "expressao" do
+        bloco de código
+    end
+
+Obs: Sempre adicione um contador para não gerar um LOOP INFINITO
+
+O comportamento do while é que enquanto a expressão for atendida, ou seja, 
+enquanto for verdadeira o bloco de código vai ser repetido
+
+### For
+
+FOR (numérico):
+
+    for "expressão", "valor1", "valor2" do
+        bloco de código
+    end
+
+Esse tipo de FOR funciona da seguinte forma: A expressão inicializa um contador,
+o próximo valor (valor1) diz qual o será o valor da última iteração e por fim o 
+valor2 é o incrementador ou decrementador. O laço só acaba após o contador ultrapassar
+o valor1.
+
+FOR (Genérico):
+
+    for "valores" in "função" do
+        bloco de código
+    end
+
+O for genérico retorna um valor da função iteradora e coloca-o dentro das variáveis
+que estarão em valores. Uma das utiliades desse for é percorrer um Array, utilizando 
+a função pairs(nomeDoArray)
+
+### Repeat
+
+Sintaxe básica:
+
+    repeat 
+        Bloco de código
+    until "expressão"
+
+Obs: Sempre adicione um contador para não gerar um LOOP INFINITO
+
+No repeat bloco será executado pelo menos uma vez para depois no linha de comando 
+"until" fazer uma validação. O laço só será interrompido quando a expressão for
+verdadeira, até atingi-la
+
+## Funções
+
+Sintaxe básica:
+
+    function nomeDaFuncao (args)
+        Bloco de código
+    end
+
+Obs: Pode ou não retornar alguma coisa, para retornar algo basta utilizar a palavra
+reservada "return" + valor
+
 
 
 

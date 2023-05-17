@@ -19,7 +19,7 @@ print()
 
 ------------- FOR GENERICO -------------
 --[[
-    for var in functio() do
+    for var in function() do
         something
     end
 ]]
