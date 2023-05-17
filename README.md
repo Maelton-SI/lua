@@ -145,7 +145,7 @@ Em seguida instale a seguinte ferramenta através do comando:
 
 E por fim para compilar e instalar a versão execute o seguinte script:
 
-    - mkdir lua_build
+    mkdir lua_build
  
     cd lua_build
  
@@ -160,5 +160,73 @@ E por fim para compilar e instalar a versão execute o seguinte script:
     sudo make install
 
 # Sintaxe
+
+## Entrada de dados
+
+Para receber dados utilizamos a função "io.read()", como no exemplo a 
+seguir:
+
+    print("Digite seu nome: ")  -> Printa na tela o que o usuário deve digitar
+    nome = io.read()            -> Recebe o input na variável nome
+    print("Seu nome é ".. nome) -> Print o mensagem + nome
+
+obs: O tipo de dado retornado pelo io.read() é uma string.
+
+## Saída de dados
+
+Para imprimir na tela utilizamos o comando print()
+
+    print("Hello World")
+
+## Declaração de Variáveis
+
+Como é característica da linguagem não precisamos explicitar qual o tipo da variável,
+pois de forma dinâmica a própria linguagem faz essa tipagem
+
+Assim declaramos uma variável da seguinte forma:
+
+    <nome da variavel> = <valor>
+
+Podemos ter os seguintes tipos para valores em Lua:
+
+    Tipos de valores:
+        Nil: Equivale ao NULL
+        Boolean: False/True
+        Number: Representa um número como ponto flutuante
+        String: Cadeia de caracter
+    Tipos Objetos:
+        Function: Possibilita guarda uma chamada de função na variável;
+        Userdata: Representa um bloco de código em C
+        Thread: Co-rotinas
+        Table: Representa Arrays e objetos
+
+obs: Para Lua quem carrega o tipo é o próprio valor e não a variável
+
+## Regras de Visibilidade
+
+Dentro da linguagem existe a palavra reservada Local, na qual você pode definir 
+variáveis locais que valem no bloco que ela foi declarada e nos próximos que sejam
+mais internos. Observe o seguinte exemplo:
+
+    x = 10                 -- variável global
+     do                    -- bloco novo
+       local x = x         -- novo 'x', com valor 10
+       print(x)            --> 10
+       x = x+1
+       do                  -- outro bloco
+         local x = x+1     -- outro 'x'
+         print(x)          --> 12
+       end
+       print(x)            --> 11
+     end
+     print(x)              --> 10  (o x global)
+
+Perceba que dependendo do bloco o x assume um valor diferente, e ao sair de cada
+um dos blocos as declarações Local mais internas vão perdendo seus valores assumindo
+assim um número mais externo 
+
+
+
+
 
 
