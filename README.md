@@ -172,11 +172,51 @@ seguir:
 
 obs: O tipo de dado retornado pelo io.read() é uma string.
 
+Caso queira retornar um number basta utilizar:
+    io.read("*n")
+
 ## Saída de dados
 
 Para imprimir na tela utilizamos o comando print()
 
     print("Hello World")
+
+Caso queira uma saída formatada você pode utilizar a seguinte função:
+
+    string.format()
+
+Dentro da função você pode utilizar os seguintes marcadores:
+
+    %s ou %q: substituído por uma string.
+    %d: substituído por um número inteiro.
+    %f: substituído por um número de ponto flutuante.
+    %o: substituído por um número octal.
+    %x ou %X: substituído por um número hexadecimal.
+    %e ou %E: substituído por um número em notação científica.
+
+Aqui você pode ver um exemplo da sua utilização:
+
+    local str = "Hello"
+    local num_int = 42
+    local num_float = 3.14
+    local num_octal = 10
+    local num_hex = 255
+    local num_scientific = 1.23e+10
+
+    local formatted_string = string.format("String: %s \n Integer: %d \n Float: %.2f \n Octal: %o \n Hexadecimal: %x \n Scientific: %e",
+    str, num_int, num_float, num_octal, num_hex, num_scientific)
+
+
+    print(formatted_string) 
+
+Com a seguinte saída:
+
+    String: Hello
+    Integer: 42
+    Float: 3.14
+    Octal: 12
+    Hexadecimal: ff
+    Scientific: 1.230000e+010
 
 ## Declaração de Variáveis
 
